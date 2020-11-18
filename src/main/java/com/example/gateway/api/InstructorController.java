@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 public class InstructorController {
 
-    private final String url = "http://10.100.60.224:8082/instructors";
+    private final String url = "http://instructorserver:8087/instructors/";
 
     @PostMapping
     public Instructor addInstructor(@RequestBody Instructor instructor){

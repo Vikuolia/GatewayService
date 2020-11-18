@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/client")
 public class ClientController {
 
-    private final String url = "http://10.100.60.224:8084/clients";
+    private final String url = "http://clientserver:8090/clients/";
 
     @PostMapping
     public Client addClient(@RequestBody Client client){

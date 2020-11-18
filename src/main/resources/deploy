@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ta-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ta-gateway
+  template:
+    metadata:
+      labels:
+        app: ta-gateway
+    spec:
+      containers:
+        - image: vicuolia/gatewayservice
+          name: ta-gateway
+          ports:
+            - containerPort: 8019
+              name: ta-gateway
+          env:
+            - name: POSTGRES_ENDPOINT
+              value: "jdbc:postgresql://localhost:5432/"
+            - name: POSTGRES_PASSWORD
+              value: "1qwerty2asdfg"
+            - name: POSTGRES_USERNAME
+              value: "travel_agency"

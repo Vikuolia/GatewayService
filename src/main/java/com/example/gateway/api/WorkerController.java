@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/worker")
 public class WorkerController {
 
-    private final String url = "http://workerserver:8086/workers/";
+    private final String url = "http://worker:8087/";
 
     @PostMapping
     public Worker addWorker(@RequestBody Worker worker){

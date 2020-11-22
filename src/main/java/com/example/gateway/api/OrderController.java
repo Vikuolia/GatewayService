@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/order")
 public class OrderController {
 
-    private final String url = "http://orderserver:8089/orders/";
+    private final String url = "http://order:8087/";
 
     @PostMapping
     public Order addOrder(@RequestBody Order order){

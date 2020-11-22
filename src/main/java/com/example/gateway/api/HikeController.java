@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/hike")
 public class HikeController {
 
-    private final String url = "http://hikeserver:8088/hikes/";
+    private final String url = "http://hike:8087/";
 
     @PostMapping
     public Hike addHike(@RequestBody Hike hike){

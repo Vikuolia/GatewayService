@@ -1,11 +1,12 @@
 package com.example.gateway.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Data;
 
-import java.util.UUID;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 public final class Instructor{
 

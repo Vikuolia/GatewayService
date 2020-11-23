@@ -2,11 +2,12 @@ package com.example.gateway.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import java.util.UUID;
+import lombok.NoArgsConstructor;
 
+
+@NoArgsConstructor
 @AllArgsConstructor
 @Data
-
 public class Hike {
 
     private String hikeId;
@@ -18,11 +19,11 @@ public class Hike {
     private int max_people;
     private double price;
 
-    private UUID instructorId;
+    private String instructorId;
 
 
     public Hike(String name, String date, int duration, int complexity, int min_age, int max_people,
-                double price, UUID instructorId){
+                double price, String instructorId){
         this.name = name;
         this.date = date;
         this.duration = duration;

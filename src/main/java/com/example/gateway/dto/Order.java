@@ -24,7 +24,8 @@ public class Order {
     private String hikeId;
 
 
-    public Order(String clientId, String sellerId, String hikeId){
+    public Order(String id, String clientId, String sellerId, String hikeId){
+        this.orderId = id;
         this.clientId = clientId;
         this.sellerId = sellerId;
         this.date = new Date().toString();

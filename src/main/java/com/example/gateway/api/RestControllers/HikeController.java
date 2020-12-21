@@ -1,4 +1,4 @@
-package com.example.gateway.api;
+package com.example.gateway.api.RestControllers;
 
 import com.example.gateway.dto.Hike;
 import org.springframework.core.ParameterizedTypeReference;

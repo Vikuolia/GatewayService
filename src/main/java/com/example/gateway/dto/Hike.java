@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 public class Hike {
 
@@ -22,8 +21,9 @@ public class Hike {
     private String instructorId;
 
 
-    public Hike(String name, String date, int duration, int complexity, int min_age, int max_people,
+    public Hike(String id, String name, String date, int duration, int complexity, int min_age, int max_people,
                 double price, String instructorId){
+        this.hikeId = id;
         this.name = name;
         this.date = date;
         this.duration = duration;
